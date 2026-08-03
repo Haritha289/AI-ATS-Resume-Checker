@@ -1,10 +1,9 @@
 const express = require("express");
 const router = express.Router();
 const { z } = require("zod");
-
+const ApiError = require("../utils/APIError");
 const env = require("../config/env");
 const asyncHandler = require("../utils/asyncHandler");
-const ApiError = require("../utils/APIError");
 const { signToken, cookieOptions } = require("../utils/jwt");
 const { validate } = require("../middleware/validate");
 const { requireAuth } = require("../middleware/auth");

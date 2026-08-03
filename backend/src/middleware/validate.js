@@ -1,4 +1,4 @@
-const ApiError=require("../utils/ApiError");
+const ApiError=require("../utils/APIError");
 const validate=(Schema,source="body") => (req,res,next) => {
     const result=Schema.safeParse(req[source]);
     if(!result.success) {

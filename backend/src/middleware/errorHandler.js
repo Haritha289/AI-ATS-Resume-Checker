@@ -1,5 +1,5 @@
 const env = require("../config/env");
-const APIError = require("../utils/APIError");
+const ApiError = require("../utils/APIError");
 
 function notFound(req, res, next) {
     next(ApiError.notFound(`Route ${req.method} ${req.originalUrl} not found`));
