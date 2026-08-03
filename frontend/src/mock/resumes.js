@@ -114,7 +114,7 @@ function makeAnalysis({ id, versionId, atsScore, summary }) {
     _id: id,
     versionId,
     atsScore,
-    model: "gemini-2.5-flash",
+    model: "gemini-3.6-flash",
     summary,
     scoreBreakdown: [
       { label: "Keywords", value: Math.min(100, atsScore + 4) },
